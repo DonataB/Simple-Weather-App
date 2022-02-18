@@ -17,4 +17,5 @@ This project was executed using the following technologies:
 
 - HTML5
 - SCSS
+- JavaScript
 - GIT
