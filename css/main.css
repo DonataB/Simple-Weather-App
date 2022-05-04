@@ -6,7 +6,7 @@
 
 body {
   width: 100%;
-  background: url(/images/tom-barrett-hgGplX3PFBg-unsplash.jpg) no-repeat center;
+  background: url(/images/noaa-ieWHXjjAEwY-unsplash.jpg) no-repeat center;
   background-size: cover;
   height: 100vh;
   font-family: "Fuzzy Bubbles", cursive;
@@ -28,7 +28,7 @@ body .card {
 body .card .city {
   width: 100%;
   height: 100%;
-  background-color: #221f1f;
+  background-color: rgb(34, 31, 31);
   mix-blend-mode: screen;
   border-radius: 5px;
   padding: 20px;
