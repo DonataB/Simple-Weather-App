@@ -8,18 +8,18 @@ body {
     // Photo by <a href="https://unsplash.com/@noaa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NOAA</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
     width: 100%;
-    background: url(/images/noaa-ieWHXjjAEwY-unsplash.jpg) no-repeat center;
+    background: url(/images/pogoda.jpg) no-repeat center;
     background-size: cover;
     height: 100vh;
     font-family: 'Fuzzy Bubbles', cursive;
-    color: white;
+    color: rgb(57, 31, 150);
 
     .nav-bar {
         padding: 1rem;
         font-size: 1.5rem;
         font-weight: bold;
         text-align: center;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid rgb(57, 31, 150);
     }
 
     .card {
@@ -31,8 +31,8 @@ body {
         .city {
         width: 100%;
         height: 100%;
-        background-color: rgb(34, 31, 31);
-        mix-blend-mode: screen;
+        background-color: rgb(180, 182, 177);
+        mix-blend-mode: hard-light;
         border-radius: 5px;
         padding: 20px;
         
