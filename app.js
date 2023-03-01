@@ -1,6 +1,6 @@
 const api = '5b481750d927247e72523845237f3514';
-const cityName = document.querySelector('.city-name');
-const tempDegree = document.querySelector('.city-temperature');
+const cityName = document.querySelector('.city');
+const tempDegree = document.querySelector('.temperature');
 const icon = document.querySelector('.icon');
 const desc = document.querySelector('.city-temperature__description');
 
