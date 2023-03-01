@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <!-- <link rel="shortcut icon" href="#"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet"> 
-    <script src="app.js" async></script>
     <title>Weather app</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
-<body>
-    <nav class="nav-bar">Simple Weather App</nav>
-    <div class="card">
-        
-        <div class="city">
-            <h1 class="city-name">Unable to Fetch Weather</h1>
-            <h3 class="city-temperature">Error</h3>
-            <div class="icon">Uuups no icon here</div>
-            <p class="city-temperature__description">No Information Available.</p>
-        </div>
 
+<body>
+    <div class="hero-img">
+        <div class="hero-bg"></div>
+        <nav class="nav">Simple Weather App</nav>
     </div>
+    <div class="card">
+        <h3 class="city">Please allow access to location</h3>
+        <h3 class="temperature">🌡<sup>o</sup>C</h3>
+        <div class="icon">Uuups no icon here</div>
+        <p class="city-temperature__description">No Information Available.</p>
+    </div>
+    <script src="app.js"></script>
 </body>
+
 </html>

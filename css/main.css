@@ -5,35 +5,63 @@
 }
 
 body {
-  width: 100%;
-  background: url(/images/tom-barrett-hgGplX3PFBg-unsplash.jpg) no-repeat center;
-  background-size: cover;
-  height: 100vh;
   font-family: "Fuzzy Bubbles", cursive;
-  color: white;
+  color: #fff;
 }
-body .nav-bar {
+
+.hero-img {
+  height: 100vh;
+  background-image: url("../images/pogoda.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero-img .hero-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav {
   padding: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   border-bottom: 1px solid white;
-}
-body .card {
-  width: clamp(300px, 80%, 350px);
-  margin: 0 auto;
-  margin-top: 100px;
-  height: 300px;
-}
-body .card .city {
-  width: 100%;
-  height: 100%;
-  background-color: #221f1f;
   mix-blend-mode: screen;
-  border-radius: 5px;
-  padding: 20px;
+  scroll-margin-top: 2rem;
 }
-body .card .city .city-temperature {
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: rgb(34, 31, 31);
+  mix-blend-mode: screen;
+  margin-top: 2rem;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.temperature {
   padding: 20px;
   font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    font-size: 2rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 500px;
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */

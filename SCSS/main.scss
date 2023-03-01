@@ -1,44 +1,70 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    // Photo by <a href="https://unsplash.com/@wistomsin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tom Barrett</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-    width: 100%;
-    background: url(/images/tom-barrett-hgGplX3PFBg-unsplash.jpg) no-repeat center;
-    background-size: cover;
-    height: 100vh;
-    font-family: 'Fuzzy Bubbles', cursive;
-    color: white;
-
-    .nav-bar {
-        padding: 1rem;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-align: center;
-        border-bottom: 1px solid white;
-    }
-
-    .card {
-        width: clamp(300px, 80%, 350px);
-        margin: 0 auto;
-        margin-top: 100px;
-        height: 300px;
-
-        .city {
-        width: 100%;
-        height: 100%;
-        background-color: rgb(34, 31, 31);
-        mix-blend-mode: screen;
-        border-radius: 5px;
-        padding: 20px;
-        
-            .city-temperature {
-            padding: 20px;
-            font-size: 2rem;
-            }
-        }
-    }
+	font-family: 'Fuzzy Bubbles', cursive;
+	color: #fff;
 }
+
+.hero-img {
+	height: 100vh;
+	background-image: url('../images/pogoda.jpg');
+	background-size: cover;
+	background-position: center;
+
+	.hero-bg {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+}
+
+.nav {
+	padding: 1rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 1px solid white;
+	mix-blend-mode: screen;
+	scroll-margin-top: 2rem;
+}
+
+.card {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	background-color: rgb(34, 31, 31);
+	mix-blend-mode: screen;
+	margin-top: 2rem;
+	border-radius: 15px;
+	padding: 20px;
+	text-align: center;
+}
+
+.temperature {
+	padding: 20px;
+	font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+	.nav {
+		font-size: 2rem;
+	}
+	.card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 500px;
+		height: 500px;
+		font-size: 30px;
+	}
+}
+
+// Photo by <a href="https://unsplash.com/@noaa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NOAA</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
